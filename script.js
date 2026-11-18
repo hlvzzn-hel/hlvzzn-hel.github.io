@@ -6,7 +6,7 @@ const root = document.documentElement;
 const savedTheme = localStorage.getItem("hza-theme");
 if (savedTheme === "dark") {
   root.setAttribute("data-theme", "dark");
-  themeIcon.textContent = "☀️";
+  if (themeIcon) themeIcon.textContent = "☀️";
 }
 
 themeToggle?.addEventListener("click", () => {
@@ -14,7 +14,23 @@ themeToggle?.addEventListener("click", () => {
   const nextTheme = isDark ? "light" : "dark";
   root.setAttribute("data-theme", nextTheme);
   localStorage.setItem("hza-theme", nextTheme);
-  themeIcon.textContent = isDark ? "🌙" : "☀️";
+  if (themeIcon) themeIcon.textContent = isDark ? "🌙" : "☀️";
+});
+
+// Mobile Navigation Drawer
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileDrawer = document.getElementById("mobileDrawer");
+
+mobileMenuBtn?.addEventListener("click", () => {
+  const isOpen = mobileDrawer?.classList.toggle("open");
+  mobileMenuBtn.setAttribute("aria-expanded", String(Boolean(isOpen)));
+});
+
+document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileDrawer?.classList.remove("open");
+    mobileMenuBtn?.setAttribute("aria-expanded", "false");
+  });
 });
 
 // Project Category Filter
@@ -38,10 +54,9 @@ projectFilterBtns.forEach((btn) => {
   });
 });
 
-// Experience Tab Switch
+// Experience Filter (All / Professional / Leadership)
 const expBtns = document.querySelectorAll("[data-exp]");
-const expWork = document.getElementById("exp-work");
-const expOrg = document.getElementById("exp-org");
+const expItems = document.querySelectorAll("[data-exp-type]");
 
 expBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -49,36 +64,151 @@ expBtns.forEach((btn) => {
     btn.classList.add("active");
 
     const target = btn.getAttribute("data-exp");
-    if (target === "work") {
-      expWork?.classList.remove("hidden");
-      expOrg?.classList.add("hidden");
-    } else {
-      expWork?.classList.add("hidden");
-      expOrg?.classList.remove("hidden");
-    }
+    expItems.forEach((item) => {
+      const type = item.getAttribute("data-exp-type");
+      if (target === "all" || type === target) {
+        item.classList.remove("hidden");
+      } else {
+        item.classList.add("hidden");
+      }
+    });
   });
 });
 
-// Unified Modal Manager
+// Accessible Modal Manager
+let lastFocusedEl = null;
+
 const openModal = (id) => {
-  const el = document.getElementById(id);
-  el?.classList.add("open");
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  lastFocusedEl = document.activeElement;
+  modal.classList.add("open");
+  const closeBtn = modal.querySelector(".modal-close");
+  if (closeBtn instanceof HTMLElement) closeBtn.focus();
 };
 
 const closeAllModals = () => {
   document.querySelectorAll(".modal-backdrop.open").forEach((m) => m.classList.remove("open"));
+  if (lastFocusedEl instanceof HTMLElement) lastFocusedEl.focus();
 };
 
-document.getElementById("openSmartInvestModal")?.addEventListener("click", () => openModal("smartInvestModal"));
-document.getElementById("openHrBriefBtn")?.addEventListener("click", () => openModal("hrBriefModal"));
 document.getElementById("openHrBriefBtnNav")?.addEventListener("click", () => openModal("hrBriefModal"));
+document.getElementById("floatingHrBtn")?.addEventListener("click", () => openModal("hrBriefModal"));
+document.getElementById("openHrBriefBtnMobile")?.addEventListener("click", () => {
+  mobileDrawer?.classList.remove("open");
+  mobileMenuBtn?.setAttribute("aria-expanded", "false");
+  openModal("hrBriefModal");
+});
 
 document.querySelectorAll("[data-modal-target]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const targetId = btn.getAttribute("data-modal-target");
     if (targetId) openModal(targetId);
   });
+  btn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      const targetId = btn.getAttribute("data-modal-target");
+      if (targetId) openModal(targetId);
+    }
+  });
 });
+
+// Animated Metric Counters
+const animateCounters = () => {
+  document.querySelectorAll(".counter").forEach((counter) => {
+    const target = parseFloat(counter.getAttribute("data-target") || "0");
+    const decimals = parseInt(counter.getAttribute("data-decimals") || "0", 10);
+    const duration = 900;
+    const startTime = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = (target * eased).toFixed(decimals);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        counter.textContent = target.toFixed(decimals);
+      }
+    };
+    requestAnimationFrame(step);
+  });
+};
+
+window.addEventListener("DOMContentLoaded", animateCounters);
+
+// Running Image Strip: Auto-scroll + Horizontal Scroll + Prev/Next + Drag
+const visualViewport = document.getElementById("visualViewport");
+const scrollPrevBtn = document.getElementById("scrollPrevBtn");
+const scrollNextBtn = document.getElementById("scrollNextBtn");
+
+if (visualViewport) {
+  let isPaused = false;
+  let isDragging = false;
+  let startX = 0;
+  let scrollStart = 0;
+  let didDrag = false;
+
+  const autoScroll = () => {
+    if (!isPaused && !isDragging) {
+      visualViewport.scrollLeft += 0.6;
+      const halfWidth = visualViewport.scrollWidth / 2;
+      if (halfWidth > 0 && visualViewport.scrollLeft >= halfWidth) {
+        visualViewport.scrollLeft -= halfWidth;
+      }
+    }
+    requestAnimationFrame(autoScroll);
+  };
+  requestAnimationFrame(autoScroll);
+
+  visualViewport.addEventListener("mouseenter", () => { isPaused = true; });
+  visualViewport.addEventListener("mouseleave", () => { isPaused = false; isDragging = false; });
+  visualViewport.addEventListener("touchstart", () => { isPaused = true; }, { passive: true });
+  visualViewport.addEventListener("touchend", () => { setTimeout(() => { isPaused = false; }, 1200); });
+
+  // Mouse drag to scroll horizontally
+  visualViewport.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    didDrag = false;
+    startX = e.pageX - visualViewport.offsetLeft;
+    scrollStart = visualViewport.scrollLeft;
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    const x = e.pageX - visualViewport.offsetLeft;
+    const walk = (x - startX) * 1.4;
+    if (Math.abs(walk) > 6) didDrag = true;
+    visualViewport.scrollLeft = scrollStart - walk;
+  });
+
+  window.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
+
+  // Prevent accidental modal open right after dragging
+  visualViewport.addEventListener("click", (e) => {
+    if (didDrag) {
+      e.stopPropagation();
+      e.preventDefault();
+      didDrag = false;
+    }
+  }, true);
+
+  // Prev / Next buttons
+  scrollPrevBtn?.addEventListener("click", () => {
+    isPaused = true;
+    visualViewport.scrollBy({ left: -330, behavior: "smooth" });
+    setTimeout(() => { isPaused = false; }, 1500);
+  });
+
+  scrollNextBtn?.addEventListener("click", () => {
+    isPaused = true;
+    visualViewport.scrollBy({ left: 330, behavior: "smooth" });
+    setTimeout(() => { isPaused = false; }, 1500);
+  });
+}
 
 document.querySelectorAll(".modal-close").forEach((btn) => {
   btn.addEventListener("click", closeAllModals);
@@ -93,66 +223,3 @@ document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeAllModals();
 });
-
-// Animated Metric Counters
-const animateCounters = () => {
-  const counters = document.querySelectorAll(".counter");
-  counters.forEach((counter) => {
-    const target = parseFloat(counter.getAttribute("data-target") || "0");
-    const decimals = parseInt(counter.getAttribute("data-decimals") || "0", 10);
-    const duration = 900;
-    const startTime = performance.now();
-
-    const step = (now) => {
-      const progress = Math.min((now - startTime) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const value = target * eased;
-      counter.textContent = value.toFixed(decimals);
-      if (progress < 1) {
-        requestAnimationFrame(step);
-      } else {
-        counter.textContent = target.toFixed(decimals);
-      }
-    };
-    requestAnimationFrame(step);
-  });
-};
-
-window.addEventListener("DOMContentLoaded", animateCounters);
-
-// Scroll Reveal
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
-
-// Copy Email Buttons
-const bindCopyEmail = (btnId) => {
-  const btn = document.getElementById(btnId);
-  btn?.addEventListener("click", async () => {
-    const email = btn.getAttribute("data-email");
-    if (!email) return;
-    try {
-      await navigator.clipboard.writeText(email);
-      const original = btn.textContent;
-      btn.textContent = "Email Copied ✓";
-      setTimeout(() => {
-        btn.textContent = original;
-      }, 2200);
-    } catch {
-      window.location.href = `mailto:${email}`;
-    }
-  });
-};
-
-bindCopyEmail("copyEmailBtn");
-bindCopyEmail("copyHrEmailBtn");
