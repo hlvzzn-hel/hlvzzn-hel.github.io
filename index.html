@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helvia Zahra Adinda | Data Analyst, BI &amp; Financial Analytics Portfolio</title>
+  <title>Helvia Zahra Adinda | Data Analyst &amp; Business Intelligence Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Helvia Zahra Adinda — Final-year Statistics undergraduate at Universitas Diponegoro (GPA 3.96/4.00). Specializing in Business Intelligence (Looker Studio, Power BI), Quantitative Finance &amp; AI (SmartInvest), and Statistical Modeling."
+    content="Explore Helvia Zahra Adinda's professional portfolio in Data Analytics, Business Intelligence, Financial Analytics, Statistical Modeling, and AI Engineering. Statistics undergraduate at Universitas Diponegoro."
   />
-  <meta property="og:title" content="Helvia Zahra Adinda | Data Analyst &amp; BI Portfolio" />
+  <meta
+    name="keywords"
+    content="Data Analyst Portfolio, Business Intelligence Analyst, Statistics Student, Power BI Dashboard, Financial Analytics, Python Data Analytics, Machine Learning, Quantitative Finance, AI Engineering, Helvia Zahra Adinda"
+  />
+  <meta name="author" content="Helvia Zahra Adinda" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Helvia Zahra Adinda | Data Analyst &amp; Business Intelligence Portfolio" />
   <meta
     property="og:description"
-    content="Data Analyst Intern at NASMOCO Rent, Manager of Data Analysis at SCSCSI UNDIP (19 projects), and AI Bootcamp Participant (SmartInvest >90% accuracy)."
+    content="Statistics-driven data professional combining Business Intelligence (Power BI, Looker Studio), Financial Analytics, Statistical Modeling, and AI Engineering."
   />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hlvzzn-helgithubio.vercel.app/" />
+
   <link rel="icon" type="image/svg+xml" href="assets/hza-monogram.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,710 +37,1038 @@
   <header class="navbar">
     <div class="container nav-inner">
       <a href="#" class="brand">
-        <img src="assets/hza-monogram.svg" alt="HZA Monogram" />
-        <span>Helvia Zahra</span>
+        <img src="assets/hza-monogram.svg" alt="Helvia Zahra Adinda Monogram" />
+        <span>Helvia Zahra Adinda</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
       <div class="nav-actions">
-        <button id="openHrBriefBtnNav" class="btn btn-outline btn-sm">HR Quick Brief</button>
+        <button id="openHrBriefBtnNav" class="btn btn-outline btn-sm nav-hr-desktop">HR Quick Brief</button>
         <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
           <span id="themeIcon">🌙</span>
         </button>
-        <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+        <button id="mobileMenuBtn" class="icon-btn mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button id="openHrBriefBtnMobile" class="btn btn-primary btn-sm">HR Quick Brief</button>
+        <a href="assets/CV_Helvia_Zahra_Adinda.pdf" download="CV_Helvia_Zahra_Adinda.pdf" class="btn btn-outline btn-sm">Download CV</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="container hero-content">
-      <div class="hero-grid">
-        <div>
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span>Statistics Undergraduate (UNDIP) · Open to Data Analyst &amp; BI Opportunities</span>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>Open to Data Analyst, BI &amp; Financial Analytics Opportunities</span>
+            </div>
+
+            <div class="hero-identity">Helvia Zahra Adinda · Data Analyst | Business Intelligence | Financial Analytics &amp; AI</div>
+            <h1>Turning Data Into Insights, Strategy &amp; Intelligent Solutions.</h1>
+            <p class="hero-desc">
+              Statistics undergraduate at Universitas Diponegoro with hands-on experience in Business Intelligence,
+              statistical analysis, financial modeling, and AI-powered applications. Passionate about transforming
+              complex data into actionable insights and practical solutions.
+            </p>
+
+            <div class="hero-meta">
+              <span><strong>Education:</strong> B.Sc. Statistics, UNDIP (GPA 3.96 / 4.00)</span>
+              <span><strong>Latest Role:</strong> Data Analyst Intern, NASMOCO Rent</span>
+              <span><strong>Core Tools:</strong> Power BI, Looker Studio, Python, R, SQL, TensorFlow</span>
+              <span><strong>Location:</strong> Semarang, Indonesia</span>
+            </div>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+              <a href="assets/CV_Helvia_Zahra_Adinda.pdf" download="CV_Helvia_Zahra_Adinda.pdf" class="btn btn-outline">Download CV</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
           </div>
 
-          <h1>Helvia Zahra Adinda</h1>
-          <p class="hero-role">Data Analyst · Business Intelligence · Financial Analytics &amp; AI</p>
-          <p class="hero-desc">
-            Final-year Statistics student at <strong>Universitas Diponegoro (GPA 3.96 / 4.00)</strong> and
-            <strong>Data Analyst Intern at NASMOCO Rent</strong>. Experienced in building real-time
-            <strong>Looker Studio &amp; Power BI</strong> dashboards, leading <strong>19 research &amp; consulting projects</strong>
-            at SCSCSI UNDIP, and engineering <strong>quantitative equity AI models (SmartInvest)</strong> with
-            <strong>&gt;90% average trend accuracy</strong>.
-          </p>
+          <div class="hero-portrait-wrap">
+            <div class="hero-portrait-card">
+              <img src="assets/helvia-profile.jpeg" alt="Portrait of Helvia Zahra Adinda, Statistics Undergraduate at Universitas Diponegoro" />
+              <div class="portrait-caption">
+                <strong>Helvia Zahra Adinda</strong>
+                <span>Semarang, ID</span>
+              </div>
+            </div>
+            <div class="portrait-badge top-left">
+              <span class="badge-icon teal">🎓</span>
+              <div>
+                <strong>GPA 3.96 / 4.00</strong>
+                <span>B.Sc. Statistics · UNDIP</span>
+              </div>
+            </div>
+            <div class="portrait-badge bottom-right">
+              <span class="badge-icon blue">📊</span>
+              <div>
+                <strong>Business Intelligence</strong>
+                <span>Power BI · Looker Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">Explore Flagship Projects</a>
-            <button id="openHrBriefBtn" class="btn btn-outline">⚡ 30-Sec HR Summary</button>
-            <a href="https://github.com/hlvzzn-hel" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
+        <!-- Measurable Evidence Strip -->
+        <div class="metrics-grid" aria-label="Key verified highlights">
+          <div class="metric-card">
+            <div class="metric-val accent-primary"><span class="counter" data-target="3.96" data-decimals="2">3.96</span> / 4.00</div>
+            <div class="metric-label">GPA · B.Sc. Statistics, UNDIP</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val"><span class="counter" data-target="19" data-decimals="0">19</span> Projects</div>
+            <div class="metric-label">Research &amp; Consulting (SCSCSI UNDIP)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val accent-teal">&gt;<span class="counter" data-target="90" data-decimals="0">90</span>% Avg. Acc.</div>
+            <div class="metric-label">SmartInvest Trend Classification</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val"><span class="counter" data-target="91" data-decimals="0">91</span> Companies</div>
+            <div class="metric-label">Surveyed · BPS Economic Census 2026</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Running Text Marquee -->
+    <div class="marquee-wrap" aria-label="Professional highlights ticker">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>✦</span> Data Analyst &amp; Business Intelligence</div>
+        <div class="marquee-item"><span>✦</span> GPA 3.96 / 4.00 (Universitas Diponegoro)</div>
+        <div class="marquee-item"><span>✦</span> SmartInvest AI (&gt;90% Avg. Trend Accuracy)</div>
+        <div class="marquee-item"><span>✦</span> 19 Research &amp; Consulting Projects (SCSCSI)</div>
+        <div class="marquee-item"><span>✦</span> BPS Economic Census 2026 (91 Companies)</div>
+        <div class="marquee-item"><span>✦</span> Doctor Data International Winner 2025</div>
+        <div class="marquee-item"><span>✦</span> Power BI · Looker Studio · Python · R · SQL</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item"><span>✦</span> Data Analyst &amp; Business Intelligence</div>
+        <div class="marquee-item"><span>✦</span> GPA 3.96 / 4.00 (Universitas Diponegoro)</div>
+        <div class="marquee-item"><span>✦</span> SmartInvest AI (&gt;90% Avg. Trend Accuracy)</div>
+        <div class="marquee-item"><span>✦</span> 19 Research &amp; Consulting Projects (SCSCSI)</div>
+        <div class="marquee-item"><span>✦</span> BPS Economic Census 2026 (91 Companies)</div>
+        <div class="marquee-item"><span>✦</span> Doctor Data International Winner 2025</div>
+        <div class="marquee-item"><span>✦</span> Power BI · Looker Studio · Python · R · SQL</div>
+      </div>
+    </div>
+
+    <!-- Running Image / Visual Showcase Strip -->
+    <section class="visual-marquee-section" aria-label="Interactive visual project snapshots">
+      <div class="container">
+        <div class="visual-header-row">
+          <div>
+            <div class="section-kicker">// Interactive Visual Snapshots</div>
+            <h2 class="section-title" style="font-size:1.35rem;">Running Portfolio Previews <span style="font-size:0.85rem;font-weight:500;color:var(--text-soft);">(Scroll horizontally or click any card)</span></h2>
+          </div>
+          <div class="carousel-controls">
+            <button id="scrollPrevBtn" class="icon-btn" aria-label="Scroll previews left" title="Scroll left">‹</button>
+            <button id="scrollNextBtn" class="icon-btn" aria-label="Scroll previews right" title="Scroll right">›</button>
+          </div>
+        </div>
+      </div>
+      <div id="visualViewport" class="visual-marquee-viewport">
+        <div class="visual-marquee-track">
+          <!-- Slide 1: SmartInvest (Real Asset) -->
+          <div class="visual-slide-card" data-modal-target="smartInvestModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/SmartInvest — 8-Stage Analytical &amp; AI Case Study.png" alt="SmartInvest 8-Stage Analytical and AI Case Study" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Quant Finance &amp; AI</div>
+            <div class="visual-slide-title">SmartInvest Equity Platform</div>
+            <div class="visual-slide-sub">8-Stage AI &amp; Portfolio Pipeline</div>
+          </div>
+
+          <!-- Slide 2: NASMOCO Rent BI (Real Asset) -->
+          <div class="visual-slide-card" data-modal-target="nasmocoModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/NASMOCO Rent — Operational &amp; Marketing BI Suite.png" alt="NASMOCO Rent Operational and Marketing BI Suite" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Enterprise BI · Looker Studio</div>
+            <div class="visual-slide-title">NASMOCO Rent BI Suite</div>
+            <div class="visual-slide-sub">Fleet, Contracts &amp; Sales Leaderboard</div>
+          </div>
+
+          <!-- Slide 3: Sales & Marketing Power BI (Real Asset) -->
+          <div class="visual-slide-card" data-modal-target="salesBiModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Sales &amp; Marketing Performance Analytics Dashboard.png" alt="Sales and Marketing Performance Analytics Dashboard" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Commercial BI · Power BI</div>
+            <div class="visual-slide-title">Sales &amp; Marketing Analytics</div>
+            <div class="visual-slide-sub">Summary, ROAS &amp; Product Portfolio</div>
+          </div>
+
+          <!-- Slide 4: NLP Sentiment (Real Asset) -->
+          <div class="visual-slide-card" data-modal-target="sentimentModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Super-App Public Opinion Sentiment Analysis.png" alt="Super-App Public Opinion Sentiment Analysis" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">NLP &amp; Text Mining · Python</div>
+            <div class="visual-slide-title">Super-App Sentiment Study</div>
+            <div class="visual-slide-sub">Gojek, Grab &amp; Shopee Reviews</div>
+          </div>
+
+          <!-- Slide 5: Secondhand Smoke (Real Asset) -->
+          <div class="visual-slide-card" data-modal-target="smokeModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Secondhand Smoke A Global Threat (GWR + IoT Concept).png" alt="Secondhand Smoke A Global Threat GWR and IoT Concept Infographic" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Spatial Stats · Int'l Winner</div>
+            <div class="visual-slide-title">Secondhand Smoke: Global Threat</div>
+            <div class="visual-slide-sub">GWR Model + IoT Sensor Concept</div>
+          </div>
+
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="visual-slide-card" data-modal-target="smartInvestModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/SmartInvest — 8-Stage Analytical &amp; AI Case Study.png" alt="SmartInvest 8-Stage Analytical and AI Case Study" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Quant Finance &amp; AI</div>
+            <div class="visual-slide-title">SmartInvest Equity Platform</div>
+            <div class="visual-slide-sub">8-Stage AI &amp; Portfolio Pipeline</div>
+          </div>
+
+          <div class="visual-slide-card" data-modal-target="nasmocoModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/NASMOCO Rent — Operational &amp; Marketing BI Suite.png" alt="NASMOCO Rent Operational and Marketing BI Suite" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Enterprise BI · Looker Studio</div>
+            <div class="visual-slide-title">NASMOCO Rent BI Suite</div>
+            <div class="visual-slide-sub">Fleet, Contracts &amp; Sales Leaderboard</div>
+          </div>
+
+          <div class="visual-slide-card" data-modal-target="salesBiModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Sales &amp; Marketing Performance Analytics Dashboard.png" alt="Sales and Marketing Performance Analytics Dashboard" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Commercial BI · Power BI</div>
+            <div class="visual-slide-title">Sales &amp; Marketing Analytics</div>
+            <div class="visual-slide-sub">Summary, ROAS &amp; Product Portfolio</div>
+          </div>
+
+          <div class="visual-slide-card" data-modal-target="sentimentModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Super-App Public Opinion Sentiment Analysis.png" alt="Super-App Public Opinion Sentiment Analysis" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">NLP &amp; Text Mining · Python</div>
+            <div class="visual-slide-title">Super-App Sentiment Study</div>
+            <div class="visual-slide-sub">Gojek, Grab &amp; Shopee Reviews</div>
+          </div>
+
+          <div class="visual-slide-card" data-modal-target="smokeModal" role="button" tabindex="0">
+            <div class="visual-slide-thumb">
+              <img src="assets/Secondhand Smoke A Global Threat (GWR + IoT Concept).png" alt="Secondhand Smoke A Global Threat GWR and IoT Concept Infographic" loading="lazy" />
+            </div>
+            <div class="visual-slide-meta">Spatial Stats · Int'l Winner</div>
+            <div class="visual-slide-title">Secondhand Smoke: Global Threat</div>
+            <div class="visual-slide-sub">GWR Model + IoT Sensor Concept</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Positioning Pillars -->
+    <section class="section" style="padding: 48px 0;">
+      <div class="container">
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-num">01 / STATISTICAL FOUNDATION</div>
+            <h3>Quantitative &amp; Econometric Rigor</h3>
+            <p>Grounded in statistical modeling, multivariate analysis, regression, and econometrics to validate hypotheses and ensure analytical integrity.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">02 / BUSINESS APPLICATION</div>
+            <h3>Decision-Ready BI &amp; Strategy</h3>
+            <p>Translating operational and marketing datasets into centralized Looker Studio &amp; Power BI dashboards, KPI tracking, and clear business recommendations.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">03 / TECHNICAL IMPLEMENTATION</div>
+            <h3>Analytical Pipelines &amp; AI Systems</h3>
+            <p>Building end-to-end Python/R analytical workflows, NLP sentiment pipelines, and TensorFlow-based financial forecasting applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">// Featured Case Studies</div>
+            <h2 class="section-title">Selected Analytics, BI &amp; AI Projects</h2>
+            <p class="section-subtitle">
+              Each project documents the problem statement, individual contribution, methodology, findings, and verified links.
+            </p>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter projects by domain">
+            <button class="tab-btn active" data-filter="all">All (5)</button>
+            <button class="tab-btn" data-filter="ai">Quant Finance &amp; AI</button>
+            <button class="tab-btn" data-filter="bi">Business Intelligence</button>
+            <button class="tab-btn" data-filter="stats">NLP &amp; Spatial Stats</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01: SmartInvest -->
+          <article class="project-card featured" data-category="ai">
+            <div>
+              <div class="project-top">
+                <span class="project-badge teal">Quantitative Finance &amp; AI Engineering · Capstone 2026</span>
+                <span class="font-mono" style="font-size:0.76rem;color:var(--text-soft);">PROJECT 01</span>
+              </div>
+              <h3 class="project-title">SmartInvest — Indonesian Equity Trend &amp; Portfolio Optimization Platform</h3>
+              <div class="project-visual">
+                <img src="assets/SmartInvest — 8-Stage Analytical &amp; AI Case Study.png" alt="SmartInvest 8-Stage Analytical and AI Case Study" class="project-thumb-img" loading="lazy" />
+              </div>
+              <p class="project-desc">
+                Collaborative web-based investment platform helping beginner and intermediate investors analyze Indonesian
+                equity market trends (<strong>LQ45, IDX80, and IHSG</strong> via Yahoo Finance) and construct
+                diversified portfolios without emotional bias. My individual contributions covered project leadership,
+                idea development, stock &amp; IHSG trend classification modeling, AI Advisor logic, and quantitative model integration.
+              </p>
+
+              <div class="project-visual">
+                <div class="visual-label">
+                  <span>8-Stage Analytical &amp; AI Pipeline</span>
+                  <span>BiLSTM + MultiHead Attention · MVEP / SIM / CAPM</span>
+                </div>
+                <div class="flow-strip">
+                  <div class="flow-node"><strong>01–02. DATA &amp; PREP</strong>Yahoo Finance prices, IHSG, BI-Rate &amp; matrix sync</div>
+                  <div class="flow-node"><strong>03–04. FEATURES &amp; EDA</strong>Log return, covariance, Beta/Alpha, Sharpe &amp; risk</div>
+                  <div class="flow-node"><strong>05–06. OPT &amp; AI</strong>MVEP/SIM/CAPM weights + BiLSTM Attention</div>
+                  <div class="flow-node"><strong>07–08. ADVISOR &amp; WEB</strong>Signal adjustment &amp; interactive REST API app</div>
+                </div>
+              </div>
+
+              <div class="project-note">
+                <strong>Evaluation &amp; Results:</strong> Achieved <strong>&gt;90% average classification accuracy</strong> across
+                market trend evaluation tests (stock &amp; IHSG regime classification), integrated with quantitative portfolio
+                weight allocation and an automated AI Advisor.
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">BiLSTM + MultiHead Attention</span>
+                <span class="tech-tag">MVEP / SIM / CAPM</span>
+                <span class="tech-tag">Yahoo Finance API</span>
+                <span class="tech-tag">AI Advisor</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-primary btn-sm" data-modal-target="smartInvestModal">Read Full Case Study (8-Stage Workflow)</button>
+              <a href="https://smartinvest-app-one.vercel.app" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Application ↗</a>
+              <a href="https://github.com/User-Galih/SmartInvest-App" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Team Repository ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: NASMOCO Rent BI Suite -->
+          <article class="project-card" data-category="bi">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">Enterprise Business Intelligence · Internship</span>
+                <span class="font-mono" style="font-size:0.76rem;color:var(--text-soft);">PROJECT 02</span>
+              </div>
+              <h3 class="project-title">NASMOCO Rent — Operational &amp; Marketing BI Suite</h3>
+              <p class="project-desc">
+                Developed centralized Looker Studio &amp; Power BI dashboards (<strong>NORMA Marketing Analytics</strong> &amp;
+                <strong>Operation Report</strong>) plus a sales tracking tool &amp; leaderboard to monitor prospect distribution,
+                UIC/UIO fleet trends (Jakarta &amp; Semarang), contract expirations, maintenance, insurance, licensing, and backup units.
+              </p>
+
+              <div class="project-visual">
+                <img src="assets/NASMOCO Rent — Operational &amp; Marketing BI Suite.png" alt="NASMOCO Rent Operational and Marketing BI Suite preview" class="project-thumb-img" loading="lazy" />
+              </div>
+
+              <div class="project-note">
+                <strong>Confidentiality Notice:</strong> Certain operational data and internal company figures have been omitted or anonymized to respect organizational confidentiality.
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Looker Studio</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Microsoft Excel</span>
+                <span class="tech-tag">KPI Monitoring</span>
+                <span class="tech-tag">Sales Leaderboard</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-primary btn-sm" data-modal-target="nasmocoModal">Read BI Case Study</button>
+              <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visual Portfolio ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Sales & Marketing Performance Analytics -->
+          <article class="project-card" data-category="bi">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">Commercial BI · Sample Dataset Case Study</span>
+                <span class="font-mono" style="font-size:0.76rem;color:var(--text-soft);">PROJECT 03</span>
+              </div>
+              <h3 class="project-title">Sales &amp; Marketing Performance Analytics Dashboard</h3>
+              <p class="project-desc">
+                Multi-page Power BI portfolio case study built with Power Query and DAX across three modules:
+                <strong>Executive Summary</strong>, <strong>Marketing &amp; Campaign Performance</strong>, and
+                <strong>Product &amp; Portfolio Analytics</strong>, tracking regional distribution, delivery logistics, and customer segments.
+              </p>
+
+              <div class="project-visual">
+                <img src="assets/Sales &amp; Marketing Performance Analytics Dashboard.png" alt="Sales and Marketing Performance Analytics Power BI Dashboard" class="project-thumb-img" loading="lazy" />
+              </div>
+
+              <div class="project-note">
+                <strong>Dataset Clarification:</strong> Portfolio case study using a <strong>simulated/sample commercial dataset</strong>
+                (illustrative figures: Rp22.5bn revenue, Rp3.8bn profit, 17.01% margin, 10.26x ROAS) to demonstrate automated ETL and DAX modeling.
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Power Query</span>
+                <span class="tech-tag">DAX</span>
+                <span class="tech-tag">Marketing Analytics</span>
+                <span class="tech-tag">Customer Segmentation</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-primary btn-sm" data-modal-target="salesBiModal">Read Case Study &amp; Modules</button>
+              <a href="https://app.powerbi.com/groups/me/reports/bf9d43a7-d979-414d-ac46-19b08f430ce8/87af1252ca084c4d51ba?ctid=03290435-ff74-45d1-aeaa-173677221cf8&experience=power-bi" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Power BI Workspace Link ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Super-App Sentiment Analysis -->
+          <article class="project-card" data-category="stats">
+            <div>
+              <div class="project-top">
+                <span class="project-badge">Natural Language Processing · Open Source</span>
+                <span class="font-mono" style="font-size:0.76rem;color:var(--text-soft);">PROJECT 04</span>
+              </div>
+              <h3 class="project-title">Super-App Public Opinion Sentiment Analysis</h3>
+              <div class="project-visual">
+                <img src="assets/Super-App Public Opinion Sentiment Analysis.png" alt="Super-App Public Opinion Sentiment Analysis" class="project-thumb-img" loading="lazy" />
+              </div>
+              <p class="project-desc">
+                Comparative NLP and text-mining study analyzing unstructured user reviews across Indonesia's three
+                major digital platforms—<strong>Gojek</strong>, <strong>Grab</strong>, and <strong>Shopee</strong>—to
+                extract recurring customer pain points and brand sentiment patterns.
+              </p>
+
+              <div class="project-note">
+                <strong>Analytical Value:</strong> Demonstrates end-to-end text preprocessing, exploratory text analysis,
+                and sentiment classification to convert raw qualitative feedback into structured product insights.
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <span class="tech-tag">Text Preprocessing</span>
+                <span class="tech-tag">Sentiment Classification</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-primary btn-sm" data-modal-target="sentimentModal">Read Case Study</button>
+              <a href="https://github.com/hlvzzn-hel/Mining-Public-Opinion-Sentiment-Analysis-of-Gojek-Grab-and-Shopee-Reviews" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub Repository ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: Secondhand Smoke -->
+          <article class="project-card" data-category="stats">
+            <div>
+              <div class="project-top">
+                <span class="project-badge amber">Spatial Statistics &amp; IoT Concept · Int'l Award 2025</span>
+                <span class="font-mono" style="font-size:0.76rem;color:var(--text-soft);">PROJECT 05</span>
+              </div>
+              <h3 class="project-title">Secondhand Smoke: A Global Threat (GWR + IoT Concept)</h3>
+              <div class="project-visual">
+                <img src="assets/Secondhand Smoke A Global Threat (GWR + IoT Concept).png" alt="Secondhand Smoke A Global Threat GWR and IoT Concept Infographic" class="project-thumb-img" loading="lazy" />
+              </div>
+              <p class="project-desc">
+                Led the competition team in formulating a public health research infographic applying
+                <strong>Geographically Weighted Regression (GWR)</strong> to global secondhand smoke exposure data,
+                paired with a <strong>proposed IoT smoke-detection sensor and real-time monitoring dashboard concept</strong>.
+              </p>
+
+              <div class="project-note">
+                <strong>Recognition &amp; Scope:</strong> Awarded <strong>Most Favorite Winner &amp; Top 10 Finalist</strong>
+                at Doctor Data Statistical Infographics (2025). <em>Note: The IoT sensor integration is a proposed conceptual design, not a deployed operational system.</em>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Geographically Weighted Regression</span>
+                <span class="tech-tag">Spatial Analysis</span>
+                <span class="tech-tag">IoT Concept Design</span>
+                <span class="tech-tag">Data Visualization</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-primary btn-sm" data-modal-target="smokeModal">Read Research Case Study</button>
+              <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Infographic ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Leadership -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">// Experience &amp; Leadership</div>
+            <h2 class="section-title">Professional &amp; Organizational Track Record</h2>
+            <p class="section-subtitle">
+              Industry internships prioritized first, followed by organizational leadership and academic teaching.
+            </p>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter experience">
+            <button class="tab-btn active" data-exp="all">All</button>
+            <button class="tab-btn" data-exp="work">Professional</button>
+            <button class="tab-btn" data-exp="org">Leadership</button>
+          </div>
+        </div>
+
+        <div class="timeline" id="experienceList">
+          <!-- Professional Experiences -->
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Sep 2026 – Present</div>
+              <div class="timeline-org">NASMOCO Rent · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Data Analyst Intern</h3>
+              <p class="timeline-summary">Developing centralized Business Intelligence dashboards and sales tracking tools for fleet operations and marketing divisions.</p>
+              <ul class="timeline-bullets">
+                <li>Designed interactive Looker Studio and Power BI dashboards to monitor operational performance and marketing campaign effectiveness in real time.</li>
+                <li>Built a sales tracking tool and sales performance leaderboard to analyze rental trends, unit utilization, and market growth opportunities.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Jun 2026 – Sep 2026</div>
+              <div class="timeline-org">Badan Pusat Statistik (BPS) · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Mitra Statistik — Sensus Ekonomi 2026</h3>
+              <p class="timeline-summary">Conducted field economic census data collection and validation to support regional economic mapping.</p>
+              <ul class="timeline-bullets">
+                <li>Surveyed and verified data from <strong>91 companies</strong> in accordance with official BPS guidelines.</li>
+                <li>Maintained data accuracy and completeness through structured entry and validation in the BPS collection system.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Feb 2026 – Jun 2026</div>
+              <div class="timeline-org">DBS Foundation Coding Camp (Dicoding) · Remote</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">AI Bootcamp Participant — AI Engineering Track</h3>
+              <p class="timeline-summary">Built quantitative stock trend forecasting models and collaborated cross-functionally on the SmartInvest capstone.</p>
+              <ul class="timeline-bullets">
+                <li>Developed Machine Learning and Deep Learning models (Regression, Neural Networks, TensorFlow) on LQ45, IDX80, and IHSG data from Yahoo Finance, achieving <strong>&gt;90% average classification accuracy</strong>.</li>
+                <li>Collaborated with engineering peers to integrate model outputs and AI Advisor logic into a web-based investment platform.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Jan 2026 – Feb 2026</div>
+              <div class="timeline-org">BPJS Ketenagakerjaan · Yogyakarta</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Data Verification Intern</h3>
+              <p class="timeline-summary">Ensured claim document integrity and supported digital service adoption for social security participants.</p>
+              <ul class="timeline-bullets">
+                <li>Verified JKK, JKP, and JP social security claim documents to maintain data accuracy and operational compliance.</li>
+                <li>Guided participants in using the JMO (Jamsostek Mobile) application and resolved account access issues.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Oct 2025 – Present</div>
+              <div class="timeline-org">Bilingual Private Tutor · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Private Mathematics Tutor</h3>
+              <p class="timeline-summary">Delivering bilingual quantitative instruction aligned with the Cambridge curriculum.</p>
+              <ul class="timeline-bullets">
+                <li>Teach elementary-level Mathematics bilingually, preparing structured learning materials and periodic evaluations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Jul 2025</div>
+              <div class="timeline-org">Badan Pusat Statistik (BPS) · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Statistics Intern</h3>
+              <p class="timeline-summary">Supported official regional statistical publications, GRDP analysis, and village data modernization.</p>
+              <ul class="timeline-bullets">
+                <li>Compiled statistical publications for education and agriculture sectors and analyzed GRDP (PDRB) as a regional economic indicator.</li>
+                <li>Supported the <em>Desa Cantik</em> program through data entry, field verification, and updates on the MATCHA Pro system.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Mar 2025 – Jun 2025</div>
+              <div class="timeline-org">SOKO Edu Financial · Remote</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Search Engine Optimization (SEO) Intern</h3>
+              <p class="timeline-summary">Improved organic discoverability of financial literacy web content.</p>
+              <ul class="timeline-bullets">
+                <li>Optimized website articles using keyword research, meta description structuring, and internal linking strategies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="work">
+            <div>
+              <div class="timeline-date">Sep 2024 – Dec 2024</div>
+              <div class="timeline-org">Universitas Diponegoro · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Assistant Lecturer — Elementary Linear Algebra</h3>
+              <p class="timeline-summary">Facilitated undergraduate mathematics instruction and problem-solving tutorials.</p>
+              <ul class="timeline-bullets">
+                <li>Taught 2 classes (~100 students) using interactive problem-solving sessions and developed structured tutorial modules.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Organizational Leadership -->
+          <article class="timeline-item" data-exp-type="org">
+            <div>
+              <div class="timeline-date">Jan 2025 – Present</div>
+              <div class="timeline-org">SCSCSI UNDIP · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Manager of Data Analysis Division</h3>
+              <p class="timeline-summary">Overseeing statistical consulting workflows, quality supervision, and client insight delivery across campus research engagements.</p>
+              <ul class="timeline-bullets">
+                <li><strong>Managerial Responsibility:</strong> Led a supervision team of <strong>8 data analysts</strong> and coordinated <strong>34 data processing members</strong> across <strong>19 research and consulting projects</strong>.</li>
+                <li><strong>Individual Contribution:</strong> Reviewed multivariate statistical methodologies, supervised analytical quality, and synthesized final business insights for client reports.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="org">
+            <div>
+              <div class="timeline-date">Mar 2024 – Jan 2025</div>
+              <div class="timeline-org">Collabo Research / Research Incubator Center · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Public Relations Coordinator</h3>
+              <p class="timeline-summary">Managed external partnerships and event communications for student research initiatives.</p>
+              <ul class="timeline-bullets">
+                <li>Coordinated the PR team and established corporate visit partnerships accommodating <strong>50+ participants</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-exp-type="org">
+            <div>
+              <div class="timeline-date">Dec 2023 – Dec 2025</div>
+              <div class="timeline-org">UKM Peduli Sosial UNDIP · Semarang</div>
+            </div>
+            <div>
+              <h3 class="timeline-role">Expert Staff — Action Division</h3>
+              <p class="timeline-summary">Participated in community humanitarian and disaster preparedness initiatives.</p>
+              <ul class="timeline-bullets">
+                <li>Collaborated with BPBD Kota Semarang on community-level disaster mitigation programs.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">// Technical Capabilities</div>
+            <h2 class="section-title">Technical Skills &amp; Proficiency</h2>
+            <p class="section-subtitle">
+              Structured across Business Intelligence, Programming/AI, Quantitative Statistics, and Analytical Software.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>A. Business Intelligence &amp; Data Analytics</h3>
+            <div class="skill-groups">
+              <div class="skill-tier">
+                <span class="tier-label tier-proficient">Proficient</span>
+                <span class="tech-tag">Looker Studio</span>
+                <span class="tech-tag">Microsoft Power BI</span>
+                <span class="tech-tag">Microsoft Excel</span>
+                <span class="tech-tag">Dashboard Development</span>
+                <span class="tech-tag">KPI Monitoring</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-intermediate">Intermediate</span>
+                <span class="tech-tag">Power Query</span>
+                <span class="tech-tag">DAX</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>B. Programming, Machine Learning &amp; AI</h3>
+            <div class="skill-groups">
+              <div class="skill-tier">
+                <span class="tier-label tier-proficient">Proficient</span>
+                <span class="tech-tag">R</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-intermediate">Intermediate</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">BiLSTM</span>
+                <span class="tech-tag">MultiHead Attention</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-familiar">Familiar</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>C. Statistical &amp; Quantitative Methods</h3>
+            <div class="skill-groups">
+              <div class="skill-tier">
+                <span class="tier-label tier-proficient">Proficient</span>
+                <span class="tech-tag">Statistical Modeling</span>
+                <span class="tech-tag">Regression Analysis</span>
+                <span class="tech-tag">Multivariate Analysis</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-intermediate">Intermediate</span>
+                <span class="tech-tag">Econometrics</span>
+                <span class="tech-tag">Geographically Weighted Regression</span>
+                <span class="tech-tag">Financial Mathematics</span>
+                <span class="tech-tag">Portfolio Optimization</span>
+                <span class="tech-tag">CAPM</span>
+                <span class="tech-tag">Single Index Model</span>
+                <span class="tech-tag">Risk Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>D. Statistical Software &amp; Supporting Tools</h3>
+            <div class="skill-groups">
+              <div class="skill-tier">
+                <span class="tier-label tier-proficient">Proficient</span>
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Minitab</span>
+                <span class="tech-tag">Canva</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-intermediate">Intermediate</span>
+                <span class="tech-tag">EViews</span>
+                <span class="tech-tag">SmartPLS</span>
+                <span class="tech-tag">Figma</span>
+              </div>
+              <div class="skill-tier">
+                <span class="tier-label tier-familiar">Familiar</span>
+                <span class="tech-tag">Git &amp; GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">// Recognition &amp; Credentials</div>
+            <h2 class="section-title">Achievements &amp; Certifications</h2>
+          </div>
+        </div>
+
+        <div class="ach-grid">
+          <div class="ach-card">
+            <div class="ach-meta">INTERNATIONAL COMPETITION · 2025</div>
+            <h3 class="ach-title">Most Favorite Winner &amp; Top 10 Finalist</h3>
+            <p class="ach-desc">
+              <strong>Doctor Data Statistical Infographics</strong> — Led the team behind <em>"Secondhand Smoke: A Global Threat"</em>,
+              applying Geographically Weighted Regression (GWR) with a proposed IoT monitoring concept.
+            </p>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-meta">NATIONAL COMPETITION · 2025 – 2026</div>
+            <h3 class="ach-title">Satria Data — Internal Selection Qualifier</h3>
+            <p class="ach-desc">
+              Passed Universitas Diponegoro internal selection for the <strong>Big Data Challenge (2026)</strong> and
+              <strong>Statistics Infographics Competition (2025)</strong>.
+            </p>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-meta">CERTIFICATION · JUN 2026</div>
+            <h3 class="ach-title">AI Engineering — DBS Foundation Coding Camp</h3>
+            <p class="ach-desc">
+              Issued by <strong>Dicoding &amp; DBS Foundation</strong> upon completing the AI Engineering bootcamp track and
+              delivering the SmartInvest capstone project.
+            </p>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-meta">CERTIFICATION · FEB 2025</div>
+            <h3 class="ach-title">R Data Science Certifications — DQLab</h3>
+            <p class="ach-desc">
+              Completed <em>R for Data Professional</em>, <em>Statistics using R</em>, and <em>Data Visualization in R</em>
+              issued by <strong>DQLab</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <div class="section-kicker">// Contact &amp; Collaboration</div>
+            <h2 class="section-title" style="margin-bottom:8px;">Let's Turn Data Into Meaningful Impact.</h2>
+            <p style="color:var(--text-muted);max-width:560px;margin-bottom:8px;">
+              I am interested in opportunities where statistical thinking, business intelligence, and technology come together to solve real-world problems.
+            </p>
+            <p style="font-size:0.86rem;color:var(--text-soft);">
+              <strong>Location:</strong> Semarang, Indonesia · <strong>Email:</strong> zahrahelvia1@gmail.com
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:zahrahelvia1@gmail.com?subject=Opportunity%20%E2%80%94%20Data%20Analyst%20%2F%20BI%20Role" class="btn btn-primary">
+              Send Email
+            </a>
+            <a href="assets/CV_Helvia_Zahra_Adinda.pdf" download="CV_Helvia_Zahra_Adinda.pdf" class="btn btn-outline">Download CV</a>
             <a href="https://www.linkedin.com/in/helvia-zahra-adinda-6a649128a" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn ↗</a>
-          </div>
-        </div>
-
-        <div class="hero-portrait-wrap">
-          <div class="hero-portrait-card">
-            <img src="assets/helvia-profile.jpeg" alt="Helvia Zahra Adinda — Data Analyst &amp; Statistics Undergraduate" />
-          </div>
-          <div class="floating-badge top-left">
-            <span class="badge-dot"></span>
-            <span>GPA 3.96 / 4.00 · UNDIP</span>
-          </div>
-          <div class="floating-badge bottom-right">
-            <span>📊</span>
-            <span>Power BI · Looker · Python · R</span>
+            <a href="https://github.com/hlvzzn-hel" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
+            <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline">Canva Portfolio ↗</a>
           </div>
         </div>
       </div>
-
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-val accent-primary"><span class="counter" data-target="3.96" data-decimals="2">3.96</span> / 4.00</div>
-          <div class="metric-label">GPA · S1 Statistics, UNDIP</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val accent-emerald">&gt;<span class="counter" data-target="90" data-decimals="0">90</span>%</div>
-          <div class="metric-label">SmartInvest Trend Accuracy (LQ45/IDX80/IHSG)</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val"><span class="counter" data-target="19" data-decimals="0">19</span> Projects</div>
-          <div class="metric-label">Led as Data Analysis Manager (SCSCSI)</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val accent-amber">Rp<span class="counter" data-target="22.5" data-decimals="1">22.5</span>B</div>
-          <div class="metric-label">Commercial Revenue Tracked in BI Suite</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Running Marquee Strip -->
-  <div class="marquee-wrap" aria-label="Core competencies ticker">
-    <div class="marquee-track">
-      <div class="marquee-item"><span>✦</span> Power BI &amp; Looker Studio</div>
-      <div class="marquee-item"><span>✦</span> SmartInvest AI (&gt;90% Accuracy)</div>
-      <div class="marquee-item"><span>✦</span> 19 Research &amp; Consulting Projects Led</div>
-      <div class="marquee-item"><span>✦</span> BPS Sensus Ekonomi 2026 (91 Companies)</div>
-      <div class="marquee-item"><span>✦</span> Doctor Data International Winner 2025</div>
-      <div class="marquee-item"><span>✦</span> Python · R · SQL · TensorFlow · SPSS</div>
-      <div class="marquee-item"><span>✦</span> GPA 3.96 / 4.00 (Universitas Diponegoro)</div>
-      <!-- Duplicate for seamless loop -->
-      <div class="marquee-item"><span>✦</span> Power BI &amp; Looker Studio</div>
-      <div class="marquee-item"><span>✦</span> SmartInvest AI (&gt;90% Accuracy)</div>
-      <div class="marquee-item"><span>✦</span> 19 Research &amp; Consulting Projects Led</div>
-      <div class="marquee-item"><span>✦</span> BPS Sensus Ekonomi 2026 (91 Companies)</div>
-      <div class="marquee-item"><span>✦</span> Doctor Data International Winner 2025</div>
-      <div class="marquee-item"><span>✦</span> Python · R · SQL · TensorFlow · SPSS</div>
-      <div class="marquee-item"><span>✦</span> GPA 3.96 / 4.00 (Universitas Diponegoro)</div>
-    </div>
-  </div>
-
-  <!-- Why Hire Helvia (HR 3-Pillar Strip) -->
-  <section class="section" style="padding: 52px 0;">
-    <div class="container">
-      <div class="pillars-grid reveal">
-        <div class="pillar-card">
-          <div class="pillar-num">01 / BUSINESS IMPACT</div>
-          <h3>Decision-Ready BI Dashboards</h3>
-          <p>Built live operational &amp; marketing dashboards at <strong>NASMOCO Rent</strong> and multi-page commercial Power BI suites tracking <strong>Rp22.5B</strong> revenue &amp; <strong>10.26x ROAS</strong>.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-num">02 / QUANTITATIVE &amp; AI RIGOR</div>
-          <h3>Statistics Meets Deep Learning</h3>
-          <p>Strong statistical foundation (<strong>GPA 3.96</strong>) combined with <strong>TensorFlow BiLSTM + MultiHead Attention</strong> and classical portfolio models (<strong>MVEP, SIM, CAPM</strong>).</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-num">03 / TEAM LEADERSHIP</div>
-          <h3>Proven Execution at Scale</h3>
-          <p>Managed <strong>8 supervisors &amp; 34 data analysts</strong> across 19 client projects at SCSCSI UNDIP, plus led an international award-winning data team.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Flagship Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">// Flagship Work</div>
-          <h2 class="section-title">Featured Analytics &amp; AI Projects</h2>
-          <p class="section-subtitle">
-            End-to-end systems spanning quantitative finance, enterprise Business Intelligence, NLP, and spatial statistics.
-          </p>
-        </div>
-
-        <div class="filter-tabs" role="tablist" aria-label="Filter projects">
-          <button class="tab-btn active" data-filter="all">All</button>
-          <button class="tab-btn" data-filter="ai">AI &amp; Quant Finance</button>
-          <button class="tab-btn" data-filter="bi">Business Intelligence</button>
-          <button class="tab-btn" data-filter="stats">NLP &amp; Spatial Stats</button>
-        </div>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1: SmartInvest (Featured) -->
-        <article class="project-card featured" data-category="ai">
-          <div>
-            <div class="project-top">
-              <span class="project-badge emerald">Capstone AI · DBS Foundation Coding Camp 2026</span>
-              <span class="font-mono" style="font-size:0.78rem;color:var(--text-soft);">01 / QUANTITATIVE AI</span>
-            </div>
-            <h3 class="project-title">SmartInvest — AI Equity &amp; Portfolio Optimization Platform</h3>
-            <p class="project-desc">
-              Collaborative web-based quantitative investment platform designed to help beginner and intermediate investors
-              construct optimal Indonesian stock portfolios (<strong>LQ45, IDX80, IHSG</strong>) without emotional bias.
-              Combines classical portfolio theory with deep learning market regime classification and an automated AI Advisor.
-            </p>
-            <div class="project-benchmark">
-              <strong>Key Benchmark:</strong> Achieved <strong>&gt;90% average classification accuracy</strong> on stock &amp; IHSG trend
-              prediction using <strong>BiLSTM + MultiHead Attention</strong>, integrated with <strong>MVEP, SIM, and CAPM</strong>
-              optimal weight allocation from live Yahoo Finance &amp; BI-Rate data.
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">BiLSTM + MultiHead Attention</span>
-              <span class="tech-tag">MVEP / SIM / CAPM</span>
-              <span class="tech-tag">Yahoo Finance API</span>
-              <span class="tech-tag">Sharpe Ratio &amp; Beta/Alpha</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <button class="btn btn-primary btn-sm" id="openSmartInvestModal">View 8-Stage AI Pipeline</button>
-            <a href="https://smartinvest-app-one.vercel.app" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live App ↗</a>
-            <a href="https://github.com/User-Galih/SmartInvest-App" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Team Repository ↗</a>
-          </div>
-        </article>
-
-        <!-- Project 2: NASMOCO Rent BI -->
-        <article class="project-card" data-category="bi">
-          <div>
-            <div class="project-top">
-              <span class="project-badge">Internship · NASMOCO Rent</span>
-              <span class="font-mono" style="font-size:0.78rem;color:var(--text-soft);">02 / ENTERPRISE BI</span>
-            </div>
-            <h3 class="project-title">NASMOCO Rent — Operational &amp; Marketing BI Suite</h3>
-            <p class="project-desc">
-              Built interactive Looker Studio &amp; Power BI dashboards (<strong>NORMA Marketing Analytics</strong> &amp;
-              <strong>Operation Report</strong>) to monitor sales prospect distribution, UIC/UIO fleet growth across Jakarta &amp; Semarang,
-              expiring rental contracts, maintenance, insurance, licensing, and backup unit availability.
-            </p>
-            <div class="project-benchmark">
-              <strong>Business Impact:</strong> Unified real-time fleet &amp; marketing KPIs into a centralized executive view,
-              paired with a sales tracking tool &amp; leaderboard for data-driven unit allocation.
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Looker Studio</span>
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">Sales Leaderboard</span>
-              <span class="tech-tag">Fleet KPI Monitoring</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <button class="btn btn-primary btn-sm" data-modal-target="nasmocoModal">View BI Architecture</button>
-            <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visual Showcase ↗</a>
-          </div>
-        </article>
-
-        <!-- Project 3: Sales & Marketing Dashboard -->
-        <article class="project-card" data-category="bi">
-          <div>
-            <div class="project-top">
-              <span class="project-badge">Commercial Analytics · Power BI</span>
-              <span class="font-mono" style="font-size:0.78rem;color:var(--text-soft);">03 / SALES &amp; ROAS</span>
-            </div>
-            <h3 class="project-title">Sales &amp; Marketing Performance Analytics Dashboard</h3>
-            <p class="project-desc">
-              Multi-page commercial analytics dashboard featuring automated data processing across three core modules:
-              <strong>Summary</strong>, <strong>Marketing &amp; Campaign Performance</strong>, and <strong>Product &amp; Portfolio Analytics</strong>
-              with regional distribution and delivery logistics tracking.
-            </p>
-            <div class="project-benchmark">
-              <strong>Key Metrics Tracked:</strong> <strong>Rp22.5bn</strong> Total Revenue, <strong>Rp3.8bn</strong> Total Profit
-              (<strong>17.01%</strong> margin), <strong>9K</strong> orders, and <strong>10.26x</strong> campaign ROAS.
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">Automated ETL</span>
-              <span class="tech-tag">ROAS &amp; CSAT</span>
-              <span class="tech-tag">Customer Segmentation</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="https://app.powerbi.com/groups/me/reports/bf9d43a7-d979-414d-ac46-19b08f430ce8/87af1252ca084c4d51ba?ctid=03290435-ff74-45d1-aeaa-173677221cf8&experience=power-bi" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Power BI Report ↗</a>
-            <button class="btn btn-outline btn-sm" data-modal-target="salesBiModal">Preview 3 Modules</button>
-          </div>
-        </article>
-
-        <!-- Project 4: Sentiment Analysis -->
-        <article class="project-card" data-category="stats">
-          <div>
-            <div class="project-top">
-              <span class="project-badge">NLP · Open Source GitHub</span>
-              <span class="font-mono" style="font-size:0.78rem;color:var(--text-soft);">04 / TEXT MINING</span>
-            </div>
-            <h3 class="project-title">Super-App Public Opinion Sentiment Analysis</h3>
-            <p class="project-desc">
-              Comparative Natural Language Processing &amp; sentiment classification study mining user reviews across
-              Indonesia's three leading digital ecosystems: <strong>Gojek</strong>, <strong>Grab</strong>, and <strong>Shopee</strong>.
-            </p>
-            <div class="project-benchmark">
-              <strong>Outcome:</strong> Extracted actionable customer pain points and comparative brand sentiment trends
-              through reproducible Jupyter Notebook text-mining workflows.
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Jupyter Notebook</span>
-              <span class="tech-tag">NLP &amp; Text Mining</span>
-              <span class="tech-tag">Sentiment Classification</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/hlvzzn-hel/Mining-Public-Opinion-Sentiment-Analysis-of-Gojek-Grab-and-Shopee-Reviews" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Source Repository ↗</a>
-          </div>
-        </article>
-
-        <!-- Project 5: Secondhand Smoke -->
-        <article class="project-card" data-category="stats">
-          <div>
-            <div class="project-top">
-              <span class="project-badge amber">International Award · Doctor Data 2025</span>
-              <span class="font-mono" style="font-size:0.78rem;color:var(--text-soft);">05 / SPATIAL STATS &amp; IOT</span>
-            </div>
-            <h3 class="project-title">Secondhand Smoke: A Global Threat (GWR + IoT Concept)</h3>
-            <p class="project-desc">
-              Served as <strong>Team Lead</strong> formulating a data-driven public health solution combining
-              <strong>Geographically Weighted Regression (GWR)</strong> spatial analysis (2.7B+ global exposure records) with an
-              automated IoT smoke-detection sensor and real-time compliance dashboard.
-            </p>
-            <div class="project-benchmark">
-              <strong>Recognition:</strong> Won <strong>Most Favorite Category Winner &amp; Top 10 Finalist</strong> at
-              <em>Doctor Data Statistical Infographics (International Level, 2025)</em>.
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Geographically Weighted Regression</span>
-              <span class="tech-tag">Statistical Infographics</span>
-              <span class="tech-tag">IoT Concept</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Infographic ↗</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience & Leadership -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">// Career &amp; Leadership</div>
-          <h2 class="section-title">Experience &amp; Campus Impact</h2>
-          <p class="section-subtitle">
-            Hands-on industry experience across automotive rental analytics, national statistics (BPS), social security verification, and academic leadership.
-          </p>
-        </div>
-
-        <div class="filter-tabs" role="tablist" aria-label="Experience type">
-          <button class="tab-btn active" data-exp="work">Work &amp; Internships</button>
-          <button class="tab-btn" data-exp="org">Organizations &amp; Leadership</button>
-        </div>
-      </div>
-
-      <div id="exp-work" class="timeline">
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Sep 2026 – Nov 2026</div>
-            <div class="timeline-org">NASMOCO Rent · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Data Analyst Intern</h3>
-            <ul class="timeline-bullets">
-              <li>Designed interactive BI dashboards (Looker Studio / Power BI) to monitor real-time operational performance and marketing campaign effectiveness.</li>
-              <li>Built a sales tracking tool and sales leaderboard to analyze vehicle rental trends, unit utilization, and market growth opportunities.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Jun 2026 – Sep 2026</div>
-            <div class="timeline-org">Badan Pusat Statistik (BPS) · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Mitra Statistik — Sensus Ekonomi 2026</h3>
-            <ul class="timeline-bullets">
-              <li>Collected and verified <strong>91 companies</strong> in accordance with BPS protocols to map regional economic potential.</li>
-              <li>Maintained data integrity and completeness through structured entry and validation in the official BPS system.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Feb 2026 – Jun 2026</div>
-            <div class="timeline-org">DBS Foundation Coding Camp (Dicoding) · Remote</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">AI Bootcamp Participant (SmartInvest Capstone)</h3>
-            <ul class="timeline-bullets">
-              <li>Engineered Machine Learning &amp; Deep Learning stock trend models (Regression, Neural Network, TensorFlow) on LQ45, IDX80, and IHSG data, achieving <strong>&gt;90% average accuracy</strong>.</li>
-              <li>Collaborated cross-functionally with fullstack and AI engineers to ship the SmartInvest web ecosystem.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Jan 2026 – Feb 2026</div>
-            <div class="timeline-org">BPJS Ketenagakerjaan · Yogyakarta</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Data Verification Intern</h3>
-            <ul class="timeline-bullets">
-              <li>Verified JKK, JKP, and JP social security claim documents to ensure data accuracy and regulatory compliance.</li>
-              <li>Assisted customers in adopting the JMO mobile app and resolving account access issues.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Jul 2025</div>
-            <div class="timeline-org">Badan Pusat Statistik (BPS) · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Statistics Intern</h3>
-            <ul class="timeline-bullets">
-              <li>Compiled education &amp; agriculture statistical publications and analyzed PDRB as a regional economic indicator.</li>
-              <li>Supported the <em>Desa Cantik</em> program via field verification and data updates on the MATCHA Pro system.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Mar 2025 – Jun 2025</div>
-            <div class="timeline-org">SOKO Edu Financial · Remote</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Search Engine Optimization (SEO)</h3>
-            <ul class="timeline-bullets">
-              <li>Optimized financial literacy web articles through keyword research, meta descriptions, and internal linking strategies.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Sep 2024 – Dec 2024</div>
-            <div class="timeline-org">Universitas Diponegoro · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Lecturer Assistant — Elementary Linear Algebra</h3>
-            <ul class="timeline-bullets">
-              <li>Taught 2 classes (~100 students) with interactive problem-solving sessions and authored structured assistance modules.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="exp-org" class="timeline hidden">
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Jan 2025 – Present</div>
-            <div class="timeline-org">SCSCSI UNDIP · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Manager of Data Analysis Division</h3>
-            <ul class="timeline-bullets">
-              <li>Led <strong>8 data analysis supervisors</strong> and coordinated <strong>34 data processing members</strong> across <strong>19 research &amp; consulting projects</strong>.</li>
-              <li>Delivered comprehensive multivariate statistical reports and strategic business insights for external clients.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Mar 2024 – Jan 2025</div>
-            <div class="timeline-org">Collabo Research / Research Incubator Center · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Public Relations Coordinator</h3>
-            <ul class="timeline-bullets">
-              <li>Coordinated public relations teams and established corporate visit partnerships for <strong>50+ participants</strong>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div>
-            <div class="timeline-date">Dec 2023 – Dec 2025</div>
-            <div class="timeline-org">UKM Peduli Sosial UNDIP · Semarang</div>
-          </div>
-          <div>
-            <h3 class="timeline-role">Expert Staff — Action Division</h3>
-            <ul class="timeline-bullets">
-              <li>Collaborated with BPBD Kota Semarang on community disaster mitigation and humanitarian response programs.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Stack -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">// Capabilities</div>
-          <h2 class="section-title">Technical Stack &amp; Domain Expertise</h2>
-        </div>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>📊 Business Intelligence &amp; Visualization</h3>
-          <div class="tech-tags" style="margin-bottom:0;">
-            <span class="tech-tag">Looker Studio</span>
-            <span class="tech-tag">Microsoft Power BI</span>
-            <span class="tech-tag">Advanced Excel (PivotTable)</span>
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">KPI &amp; ROAS Dashboards</span>
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">Canva</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h3>🤖 Data Science, ML &amp; Quantitative AI</h3>
-          <div class="tech-tags" style="margin-bottom:0;">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">TensorFlow</span>
-            <span class="tech-tag">BiLSTM + MultiHead Attention</span>
-            <span class="tech-tag">Quantile &amp; Linear Regression</span>
-            <span class="tech-tag">MVEP / SIM / CAPM</span>
-            <span class="tech-tag">NLP / Sentiment Analysis</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h3>📐 Statistical &amp; Econometric Modeling</h3>
-          <div class="tech-tags" style="margin-bottom:0;">
-            <span class="tech-tag">R / RStudio</span>
-            <span class="tech-tag">SPSS</span>
-            <span class="tech-tag">Minitab</span>
-            <span class="tech-tag">EViews</span>
-            <span class="tech-tag">SmartPLS</span>
-            <span class="tech-tag">Multivariate Analysis</span>
-            <span class="tech-tag">Geographically Weighted Regression</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h3>💼 Domain &amp; Industry Knowledge</h3>
-          <div class="tech-tags" style="margin-bottom:0;">
-            <span class="tech-tag">Financial &amp; Equity Analytics</span>
-            <span class="tech-tag">Fleet &amp; Marketing Ops</span>
-            <span class="tech-tag">Regional Economics (PDRB)</span>
-            <span class="tech-tag">Survey &amp; Census Validation</span>
-            <span class="tech-tag">Actuarial &amp; Risk Screening</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements & Certifications -->
-  <section id="achievements" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">// Recognition</div>
-          <h2 class="section-title">Achievements &amp; Certifications</h2>
-        </div>
-      </div>
-
-      <div class="ach-grid">
-        <div class="ach-card">
-          <div class="ach-year">INTERNATIONAL · 2025</div>
-          <h3 class="ach-title">Most Favorite Winner &amp; Top 10 Finalist</h3>
-          <p class="ach-desc">
-            <strong>Doctor Data Statistical Infographics</strong> — Led the team behind <em>"Secondhand Smoke: A Global Threat"</em>,
-            combining GWR spatial modeling with an IoT smoke-detection dashboard concept.
-          </p>
-        </div>
-
-        <div class="ach-card">
-          <div class="ach-year">NATIONAL · 2025 – 2026</div>
-          <h3 class="ach-title">Satria Data Internal Selection Qualifier</h3>
-          <p class="ach-desc">
-            Selected to represent Universitas Diponegoro in the <strong>Big Data Challenge (2026)</strong> and
-            <strong>Statistics Infographics Competition (2025)</strong>.
-          </p>
-        </div>
-
-        <div class="ach-card">
-          <div class="ach-year">CERTIFICATION · JUN 2026</div>
-          <h3 class="ach-title">AI Engineering — DBS Foundation Coding Camp</h3>
-          <p class="ach-desc">
-            Completed intensive AI Engineering track by <strong>Dicoding &amp; DBS Foundation</strong>, culminating in the
-            SmartInvest quantitative equity capstone project.
-          </p>
-        </div>
-
-        <div class="ach-card">
-          <div class="ach-year">CERTIFICATION · FEB 2025</div>
-          <h3 class="ach-title">R Data Science Track — DQLab</h3>
-          <p class="ach-desc">
-            Certified in <em>R for Data Professional</em>, <em>Statistics using R</em>, and <em>Data Visualization in R</em>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-box">
-        <div>
-          <div class="section-kicker">// Let's Turn Data Into Impact</div>
-          <h2 class="section-title" style="margin-bottom:8px;">Open for Data Analyst, BI &amp; Analytics Roles</h2>
-          <p style="color:var(--text-muted);max-width:540px;">
-            Based in Semarang, Indonesia · Available for full-time, internship, and research collaborations.
-          </p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:zahrahelvia1@gmail.com?subject=Opportunity%20%E2%80%94%20Data%20Analyst%20%2F%20BI%20Role" class="btn btn-primary">
-            Email Me (zahrahelvia1@gmail.com)
-          </a>
-          <a href="https://www.linkedin.com/in/helvia-zahra-adinda-6a649128a" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn ↗</a>
-          <a href="https://github.com/hlvzzn-hel" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
-      &copy; 2026 Helvia Zahra Adinda · Built with precision for Data &amp; Decision Intelligence.
+      &copy; 2026 Helvia Zahra Adinda · Semarang, Indonesia · Data Analytics, Business Intelligence &amp; Financial Modeling.
     </div>
   </footer>
 
-  <!-- SmartInvest Case Study Modal -->
-  <div id="smartInvestModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <!-- Floating HR Quick Brief Action -->
+  <button id="floatingHrBtn" class="floating-hr-btn" aria-label="Open 30-second HR Quick Brief">
+    <span>⚡</span>
+    <span>HR Quick Brief</span>
+  </button>
+
+  <!-- MODAL 1: SmartInvest Case Study -->
+  <div id="smartInvestModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="smartModalTitle">
     <div class="modal">
       <div class="modal-header">
         <div>
-          <span class="project-badge emerald" style="display:inline-block;margin-bottom:8px;">Architecture Deep-Dive</span>
-          <h3 id="modalTitle" class="project-title" style="margin-bottom:0;">SmartInvest 8-Stage Quantitative &amp; AI Pipeline</h3>
+          <span class="project-badge teal" style="display:inline-block;margin-bottom:6px;">Project 01 · Quantitative Finance &amp; AI</span>
+          <h3 id="smartModalTitle" class="project-title" style="margin-bottom:0;">SmartInvest — 8-Stage Analytical &amp; AI Case Study</h3>
         </div>
         <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
       </div>
-      <p style="color:var(--text-muted);font-size:0.93rem;">
-        End-to-end workflow engineered during <strong>DBS Foundation Coding Camp 2026</strong> to bridge classical portfolio theory
-        with deep-learning market regime forecasting:
-      </p>
-      <div class="pipeline-steps">
-        <div class="pipeline-step"><strong>01. DATA SOURCE</strong>Historical stock prices, volume, IHSG index, and BI-Rate via Yahoo Finance.</div>
-        <div class="pipeline-step"><strong>02. PREPROCESSING</strong>Data assessing, missing value handling, validation, and price matrix synchronization.</div>
-        <div class="pipeline-step"><strong>03. FEATURE ENGINEERING</strong>Log Return, Covariance Matrix, Beta &amp; Alpha, Sharpe Ratio, and CAPM Expected Return.</div>
-        <div class="pipeline-step"><strong>04. EXPLORATORY ANALYSIS</strong>Risk vs. Return mapping, correlation heatmaps, and asset volatility profiling.</div>
-        <div class="pipeline-step"><strong>05. PORTFOLIO OPTIMIZATION</strong>Optimal capital weight allocation using MVEP, SIM, and CAPM models.</div>
-        <div class="pipeline-step"><strong>06. AI TREND CLASSIFICATION</strong>BiLSTM + MultiHead Attention predicting stock &amp; IHSG regimes (&gt;90% avg accuracy).</div>
-        <div class="pipeline-step"><strong>07. RECOMMENDATION SYSTEM</strong>Combines AI market regime signals with portfolio weights for BUY/HOLD/SELL guidance.</div>
-        <div class="pipeline-step"><strong>08. WEB DEPLOYMENT</strong>Interactive dashboard with AI Advisor narrative &amp; real-time parameter configuration.</div>
+      <img src="assets/SmartInvest — 8-Stage Analytical &amp; AI Case Study.png" alt="SmartInvest 8-Stage Analytical and AI Case Study" class="modal-thumb-img" loading="lazy" />
+      <div class="case-grid">
+        <div class="case-block"><strong>Problem Statement</strong>Beginner and intermediate retail investors often make emotional stock decisions due to fragmented market indicators and complex portfolio math.</div>
+        <div class="case-block"><strong>Objective &amp; Role</strong>Provide data-driven portfolio weights and trend signals. Individual role: project leadership, idea formulation, stock/IHSG trend modeling, AI Advisor &amp; model integration.</div>
+        <div class="case-block"><strong>Tools &amp; Methodologies</strong>Python, TensorFlow, BiLSTM + MultiHead Attention, MVEP, Single Index Model (SIM), CAPM, Yahoo Finance API, REST API.</div>
+        <div class="case-block"><strong>Key Findings &amp; Results</strong>Achieved &gt;90% average classification accuracy on stock &amp; IHSG trend evaluation tests, integrated with automated portfolio weight recommendations.</div>
       </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
-        <a href="https://smartinvest-app-one.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Live App ↗</a>
-        <a href="https://github.com/User-Galih/SmartInvest-App" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Team Repo ↗</a>
+      <div class="pipeline-steps">
+        <div class="pipeline-step"><strong>01. DATA COLLECTION</strong>Historical equity prices, trading volume, LQ45/IDX80, IHSG, and BI-Rate via Yahoo Finance.</div>
+        <div class="pipeline-step"><strong>02. DATA PREPROCESSING</strong>Missing-value checks, temporal synchronization, validation, and price matrix transformation.</div>
+        <div class="pipeline-step"><strong>03. FEATURE ENGINEERING</strong>Log returns, covariance matrix, Beta &amp; Alpha, Sharpe Ratio, and CAPM expected return.</div>
+        <div class="pipeline-step"><strong>04. EXPLORATORY ANALYSIS</strong>Risk-vs-return profiling, correlation heatmaps, and asset volatility analysis.</div>
+        <div class="pipeline-step"><strong>05. PORTFOLIO OPTIMIZATION</strong>Optimal capital allocation weights calculated via MVEP, SIM, and CAPM.</div>
+        <div class="pipeline-step"><strong>06. AI TREND CLASSIFICATION</strong>BiLSTM + MultiHead Attention classifying stock and IHSG market regimes.</div>
+        <div class="pipeline-step"><strong>07. RECOMMENDATION SYSTEM</strong>Adjusts portfolio recommendations based on predicted IHSG and stock trend regimes.</div>
+        <div class="pipeline-step"><strong>08. WEB DEPLOYMENT</strong>Interactive dashboard with parameter configuration and AI Advisor narrative output.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="https://smartinvest-app-one.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Live Application ↗</a>
+        <a href="https://github.com/User-Galih/SmartInvest-App" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Team Repository ↗</a>
       </div>
     </div>
   </div>
 
-  <!-- Sales & Marketing Power BI Modal -->
+  <!-- MODAL 2: NASMOCO Rent BI Suite -->
+  <div id="nasmocoModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="nasmocoModalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <span class="project-badge" style="display:inline-block;margin-bottom:6px;">Project 02 · Enterprise Business Intelligence</span>
+          <h3 id="nasmocoModalTitle" class="project-title" style="margin-bottom:0;">NASMOCO Rent — Operational &amp; Marketing BI Suite</h3>
+        </div>
+        <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <img src="assets/NASMOCO Rent — Operational &amp; Marketing BI Suite.png" alt="NASMOCO Rent BI Suite visual preview" class="modal-thumb-img" loading="lazy" />
+      <div class="case-grid">
+        <div class="case-block"><strong>Problem Statement</strong>Marketing prospect tracking and fleet operations (contracts, maintenance, insurance, backup units) needed centralized visibility across Jakarta and Semarang branches.</div>
+        <div class="case-block"><strong>Role &amp; Tools</strong>Data Analyst Intern. Built end-to-end dashboards using Looker Studio, Power BI, and Microsoft Excel data processing.</div>
+        <div class="case-block"><strong>Marketing Dashboard (NORMA)</strong>Tracks prospect list distribution by sales rep and month, plus UIC/UIO fleet growth and customer characteristics.</div>
+        <div class="case-block"><strong>Operation Report &amp; Leaderboard</strong>Monitors expiring rental contracts, unit maintenance, insurance, licensing, backup vehicle readiness, and sales leaderboard performance.</div>
+        <div class="case-block full"><strong>Confidentiality Notice</strong>Certain operational data and internal company figures have been omitted or anonymized to respect organizational confidentiality.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Visual Portfolio ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Sales & Marketing Power BI -->
   <div id="salesBiModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="salesModalTitle">
     <div class="modal">
       <div class="modal-header">
         <div>
-          <span class="project-badge" style="display:inline-block;margin-bottom:8px;">Power BI Case Study</span>
-          <h3 id="salesModalTitle" class="project-title" style="margin-bottom:0;">Sales &amp; Marketing Performance Analytics</h3>
+          <span class="project-badge" style="display:inline-block;margin-bottom:6px;">Project 03 · Commercial BI (Sample Dataset)</span>
+          <h3 id="salesModalTitle" class="project-title" style="margin-bottom:0;">Sales &amp; Marketing Performance Analytics Dashboard</h3>
         </div>
         <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
       </div>
-      <p style="color:var(--text-muted);font-size:0.93rem;">
-        Multi-page Power BI report built with automated data transformation to track commercial KPIs, campaign ROI, and delivery logistics:
-      </p>
-      <div class="pipeline-steps">
-        <div class="pipeline-step"><strong>MODULE 1 · EXECUTIVE SUMMARY</strong>Tracks Rp22.5bn Total Revenue, Rp3.8bn Profit (17.01% margin), 9K Orders, On-Time Delivery (31.67%), and Return Rate (15.79%).</div>
-        <div class="pipeline-step"><strong>MODULE 2 · MARKETING &amp; ROAS</strong>Evaluates Rp237M ad spend, 10.26x ROAS, Rp2.4bn Campaign Revenue, Avg CSAT, and top-performing campaign (Back to School).</div>
-        <div class="pipeline-step"><strong>MODULE 3 · PRODUCT &amp; PORTFOLIO</strong>Analyzes 1K+ category orders, Rp2.4bn revenue, Rp2.33M profit breakdown, and top product performance (Headphones).</div>
-        <div class="pipeline-step"><strong>TECHNICAL PIPELINE</strong>Automated ETL, dynamic DAX measures, regional &amp; customer-segment slicing (Consumer, Corporate, Small Biz).</div>
+      <img src="assets/Sales &amp; Marketing Performance Analytics Dashboard.png" alt="Sales and Marketing Performance Analytics Power BI preview" class="modal-thumb-img" loading="lazy" />
+      <div class="case-grid">
+        <div class="case-block"><strong>Objective &amp; Role</strong>Demonstrate automated Power BI ETL, DAX modeling, and multi-page executive storytelling for commercial sales and marketing KPIs.</div>
+        <div class="case-block"><strong>Tools &amp; Process</strong>Power BI, Power Query, DAX, customer segmentation, regional distribution mapping, and logistics tracking.</div>
+        <div class="case-block"><strong>Module 1 · Executive Summary</strong>Tracks revenue, profit margin, total orders, on-time delivery rate, return rate, and regional/channel breakdown.</div>
+        <div class="case-block"><strong>Module 2 &amp; 3 · Marketing &amp; Product</strong>Evaluates campaign spend, ROAS, customer satisfaction (CSAT), and product portfolio category performance.</div>
+        <div class="case-block full"><strong>Sample Dataset Notice</strong>This dashboard is a portfolio case study built on a simulated/sample commercial dataset (illustrative figures include Rp22.5bn revenue, Rp3.8bn profit, 17.01% margin, and 10.26x ROAS). It does not represent real company financial results.</div>
       </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
-        <a href="https://app.powerbi.com/groups/me/reports/bf9d43a7-d979-414d-ac46-19b08f430ce8/87af1252ca084c4d51ba?ctid=03290435-ff74-45d1-aeaa-173677221cf8&experience=power-bi" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Power BI Report ↗</a>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="https://app.powerbi.com/groups/me/reports/bf9d43a7-d979-414d-ac46-19b08f430ce8/87af1252ca084c4d51ba?ctid=03290435-ff74-45d1-aeaa-173677221cf8&experience=power-bi" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open Power BI Workspace ↗</a>
         <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Slides in Portfolio ↗</a>
       </div>
     </div>
   </div>
 
-  <!-- NASMOCO Rent BI Modal -->
-  <div id="nasmocoModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="nasmocoModalTitle">
+  <!-- MODAL 4: Sentiment Analysis -->
+  <div id="sentimentModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sentimentModalTitle">
     <div class="modal">
       <div class="modal-header">
         <div>
-          <span class="project-badge" style="display:inline-block;margin-bottom:8px;">Internship Impact · NASMOCO Rent</span>
-          <h3 id="nasmocoModalTitle" class="project-title" style="margin-bottom:0;">Operational &amp; Marketing BI Suite</h3>
+          <span class="project-badge" style="display:inline-block;margin-bottom:6px;">Project 04 · Natural Language Processing</span>
+          <h3 id="sentimentModalTitle" class="project-title" style="margin-bottom:0;">Super-App Public Opinion Sentiment Analysis</h3>
         </div>
         <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
       </div>
-      <p style="color:var(--text-muted);font-size:0.93rem;">
-        Centralized Looker Studio &amp; Power BI reporting ecosystem engineered for NASMOCO Rent's Marketing &amp; Operations divisions:
-      </p>
-      <div class="pipeline-steps">
-        <div class="pipeline-step"><strong>NORMA MARKETING ANALYTICS</strong>Tracks Prospect List distribution by sales rep &amp; month, plus UIC/UIO fleet growth across Jakarta &amp; Semarang.</div>
-        <div class="pipeline-step"><strong>OPERATION REPORT DASHBOARD</strong>Monitors expiring rental contracts, vehicle maintenance schedules, insurance, licensing, and backup unit readiness.</div>
-        <div class="pipeline-step"><strong>SALES TRACKING &amp; LEADERBOARD</strong>Automated sales performance leaderboard to benchmark rep productivity and identify regional growth opportunities.</div>
-        <div class="pipeline-step"><strong>DATA GOVERNANCE</strong>Sensitive UIC/UIO figures structured with role-aware views for internal stakeholder decision-making.</div>
+      <img src="assets/Super-App Public Opinion Sentiment Analysis.png" alt="Super-App Public Opinion Sentiment Analysis" class="modal-thumb-img" loading="lazy" />
+      <div class="case-grid">
+        <div class="case-block"><strong>Problem Statement</strong>App store reviews contain thousands of unstructured complaints and praise that are difficult to compare manually across competing platforms.</div>
+        <div class="case-block"><strong>Analytical Process</strong>Text cleaning, tokenization, exploratory text analysis, and sentiment classification across Gojek, Grab, and Shopee user reviews.</div>
+        <div class="case-block"><strong>Tools</strong>Python, Jupyter Notebook, NLP preprocessing &amp; sentiment analysis libraries.</div>
+        <div class="case-block"><strong>Business Implication</strong>Transforms unstructured customer voice into structured pain-point comparisons to guide service quality improvements.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="https://github.com/hlvzzn-hel/Mining-Public-Opinion-Sentiment-Analysis-of-Gojek-Grab-and-Shopee-Reviews" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open GitHub Repository ↗</a>
       </div>
     </div>
   </div>
 
-  <!-- 30-Second HR Quick Brief Modal -->
+  <!-- MODAL 5: Secondhand Smoke -->
+  <div id="smokeModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="smokeModalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <span class="project-badge amber" style="display:inline-block;margin-bottom:6px;">Project 05 · Spatial Statistics &amp; IoT Concept</span>
+          <h3 id="smokeModalTitle" class="project-title" style="margin-bottom:0;">Secondhand Smoke: A Global Threat</h3>
+        </div>
+        <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <img src="assets/Secondhand Smoke A Global Threat (GWR + IoT Concept).png" alt="Secondhand Smoke GWR and IoT Concept Infographic" class="modal-thumb-img" loading="lazy" />
+      <div class="case-grid">
+        <div class="case-block"><strong>Research Objective &amp; Role</strong>Served as Team Lead in Doctor Data 2025, analyzing global secondhand smoke exposure disparities and designing a preventive monitoring concept.</div>
+        <div class="case-block"><strong>Methodology &amp; Findings</strong>Applied Geographically Weighted Regression (GWR) to identify countries with high exposure-driven mortality coefficients and gender-disaggregated impact.</div>
+        <div class="case-block"><strong>Proposed IoT Concept</strong>Formulated a conceptual smoke-detection sensor and real-time alert dashboard for smoke-free public zones (proposed conceptual design, not a deployed hardware system).</div>
+        <div class="case-block"><strong>Recognition</strong>Awarded Most Favorite Category Winner &amp; Top 10 Finalist at Doctor Data Statistical Infographics (International Level, 2025).</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="https://portohelviazahra.my.canva.site/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Infographic in Portfolio ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 6: HR Quick Brief -->
   <div id="hrBriefModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="hrModalTitle">
     <div class="modal">
       <div class="modal-header">
         <div>
-          <span class="project-badge emerald" style="display:inline-block;margin-bottom:8px;">Recruiter Fast-Track</span>
-          <h3 id="hrModalTitle" class="project-title" style="margin-bottom:0;">30-Second HR &amp; Hiring Manager Brief</h3>
+          <span class="project-badge teal" style="display:inline-block;margin-bottom:6px;">30-Second Recruiter Summary</span>
+          <h3 id="hrModalTitle" class="project-title" style="margin-bottom:0;">HR &amp; Hiring Manager Quick Brief</h3>
         </div>
         <button class="icon-btn modal-close" aria-label="Close modal">✕</button>
       </div>
-      <div class="pipeline-steps">
-        <div class="pipeline-step"><strong>TARGET ROLES</strong>Data Analyst · Business Intelligence Analyst · Financial / Risk Analyst · Junior Data Scientist</div>
-        <div class="pipeline-step"><strong>EDUCATION &amp; AVAILABILITY</strong>S1 Statistics, Universitas Diponegoro (GPA 3.96 / 4.00) · Available for Internship / Full-Time / Remote</div>
-        <div class="pipeline-step"><strong>CORE TOOLKIT</strong>Looker Studio, Power BI, SQL, Python, TensorFlow, R, SPSS, Minitab, Advanced Excel</div>
-        <div class="pipeline-step"><strong>STANDOUT PROOF</strong>NASMOCO Rent BI Intern · 19 Projects Led (SCSCSI) · SmartInvest (&gt;90% Acc) · International Award 2025</div>
+      <div class="case-grid">
+        <div class="case-block"><strong>Personal Profile</strong>Helvia Zahra Adinda — Statistics Undergraduate, Universitas Diponegoro (Semarang, Indonesia).</div>
+        <div class="case-block"><strong>Academic Performance</strong>GPA 3.96 / 4.00 (subject to current academic record verification).</div>
+        <div class="case-block"><strong>Target Roles</strong>Data Analyst · Business Intelligence Analyst · Financial Analyst · Risk Analyst · Junior Data Scientist · AI Engineering-related roles.</div>
+        <div class="case-block"><strong>Core Toolkit</strong>Power BI, Looker Studio, Excel, SQL, Python, R, TensorFlow, SPSS.</div>
+        <div class="case-block full"><strong>Professional Evidence</strong>NASMOCO Rent BI Internship · SCSCSI UNDIP Data Analysis Division Manager (19 projects) · SmartInvest AI Capstone · BPS 2026 Economic Census (91 companies) · Doctor Data International 2025 Recognition.</div>
       </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
-        <a href="mailto:zahrahelvia1@gmail.com?subject=Opportunity%20%E2%80%94%20Data%20Analyst%20%2F%20BI%20Role" class="btn btn-primary btn-sm">Email Me (zahrahelvia1@gmail.com)</a>
-        <a href="https://www.linkedin.com/in/helvia-zahra-adinda-6a649128a" target="_blank" rel="noopener" class="btn btn-outline btn-sm">LinkedIn Profile ↗</a>
-        <a href="https://github.com/hlvzzn-hel" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub ↗</a>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <a href="assets/CV_Helvia_Zahra_Adinda.pdf" download="CV_Helvia_Zahra_Adinda.pdf" class="btn btn-primary btn-sm">Download CV</a>
+        <a href="mailto:zahrahelvia1@gmail.com?subject=Opportunity%20%E2%80%94%20Data%20Analyst%20%2F%20BI%20Role" class="btn btn-outline btn-sm">Send Email</a>
+        <a href="https://www.linkedin.com/in/helvia-zahra-adinda-6a649128a" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit LinkedIn ↗</a>
+        <a href="https://github.com/hlvzzn-hel" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit GitHub ↗</a>
       </div>
     </div>
   </div>
